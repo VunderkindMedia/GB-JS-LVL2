@@ -20,6 +20,11 @@ header {
   font-size: 16px;
   color: #e6e6e6;
   cursor: pointer;
+  display: flex;
+  & p {
+    color: #e6e6e6;
+    margin-left: 5px;
+  }
   &:hover {
     opacity: .8;
   }
@@ -71,6 +76,9 @@ header {
     width: 200px;
     background: #6e6e6e;
     align-self: flex-end;
+  }
+  & .disabled {
+    background-color: green;
   }
   &:not(:last-child) {
     margin-right: 15px;

@@ -1,0 +1,9 @@
+.price,
+.calories {
+  display: flex;
+}
+.price span,
+.calories span {
+  margin: 0 5px;
+}
+/*# sourceMappingURL=hamburger.css.map */

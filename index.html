@@ -13,7 +13,7 @@
         <div class="wrapper header-wrapper">
             <div class="logo">LOGO</div>
             <div class="main-menu">MENU</div>
-            <div class="cart-button" type="button">Корзина</div>
+            <div class="cart-button" type="button">Корзина - <p></p></div>
         </div>
     </header>
     <main>
@@ -23,5 +23,24 @@
         </div>
     </main>
 <script src="assets/js/main.js"></script>
+<script>
+  const itemsHTML = document.querySelectorAll('.product-item__cart-btn');
+
+  itemsHTML.forEach((el) => {
+    const title = el.parentNode.querySelector('.product-item__title').innerHTML;
+    const price = el.parentNode.querySelector('.product-item__price').innerHTML;
+    el.addEventListener('click', () => {
+      if (!el.classList.contains('disabled')) {
+        el.innerHTML = 'Удалить из корзины';
+        cartList.addItem(title,price);
+        el.classList.add('disabled');
+      } else {
+        el.innerHTML = 'Добавить в корзину';
+        cartList.deleteItem({title, price});
+        el.classList.remove('disabled');
+      }
+    })
+  })
+</script>
 </body>
 </html>
