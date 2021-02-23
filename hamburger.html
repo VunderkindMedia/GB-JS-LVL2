@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор гамбургера</title>
+    <link rel="stylesheet" href="assets/css/hamburger.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Размер бургера:</legend>
+        <input type="radio" name="size" checked value="big" >Большой<br>
+        <input type="radio" name="size" value="small" >Маленький<br>
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Выбор начинки:</legend>
+        <input type="checkbox" data-type="topping" data-name="cheese" data-price="10" data-calories="20">С сыром<br>
+        <input type="checkbox" data-type="topping" data-name="vegetation" data-price="20" data-calories="5">С салатом<br>
+        <input type="checkbox" data-type="topping" data-name="patate" data-price="15" data-calories="10">С картофелем<br>
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Дополнительно:</legend>
+        <input type="checkbox" data-type="topping" data-name="seasoning" data-price="10" data-calories="0" >Приправа<br>
+        <input type="checkbox" data-type="topping" data-name="mayonnaise" data-price="20" data-calories="5">Майонез<br>
+        <br>
+    </fieldset>
+
+    <div class="info">
+        <span class="calories">Каллории: <span>0</span> ккал</span>
+        <span class="price">Цена: <span>0</span>руб.</span>
+    </div>
+
+    <button>Рассчитать</button>
+
+<script src="assets/js/hamburger.js"></script>
+
+<script>
+    const btn = document.querySelector('button');
+    const priceElement = document.querySelector('.price span');
+    const caloriesElement = document.querySelector('.calories span');
+
+    btn.addEventListener('click', () => {
+      const size = document.querySelector('input[name="size"]:checked').value;
+      const toppingInputs = document.querySelectorAll('input[data-type="topping"]:checked');
+
+      const hamburger = new Hamburger(size);
+
+      toppingInputs.forEach((el) => {
+        const name = el.getAttribute('data-name');
+        const price = el.getAttribute('data-price');
+        const calories = el.getAttribute('data-calories');
+        hamburger.addTopping(new Topping(name, +price, +calories));
+      });
+      priceElement.innerHTML = hamburger.calculatePrice();
+      caloriesElement.innerHTML = hamburger.calculateCalories();
+    })
+</script>
+</body>
+</html>
