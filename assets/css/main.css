@@ -15,6 +15,13 @@ header {
   box-sizing: border-box;
   border-bottom: 1px solid gray;
 }
+.header-search {
+  padding: 7px 14px;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  height: 20px;
+  outline: none;
+}
 .cart-button {
   transition: 0.5s;
   border-radius: 5px;
@@ -88,6 +95,50 @@ header {
   background-color: green;
 }
 .product-item:not(:last-child) {
+  margin-right: 15px;
+}
+.carts-list {
+  padding: 25px;
+}
+.carts-item {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 400px;
+}
+.carts-item:hover {
+  transform: scale(1.02);
+}
+.carts-item__image {
+  width: 100%;
+}
+.carts-item__image img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.carts-item__title,
+.carts-item__price,
+.carts-item__cart-btn {
+  margin: 10px 15px;
+}
+.carts-item__price {
+  color: darkred;
+}
+.carts-item__cart-btn {
+  width: 200px;
+  background: #6e6e6e;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carts-item .disabled {
+  background-color: green;
+}
+.carts-item:not(:last-child) {
   margin-right: 15px;
 }
 .cssload-container * {
@@ -339,5 +390,39 @@ header {
   100% {
     transform: translate3d(0, 0, 0);
   }
+}
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 66px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+.modalDialog:target {
+  display: block;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 800px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.close {
+  display: none;
+}
+.close:hover {
+  background: #00d9ff;
 }
 /*# sourceMappingURL=main.css.map */
