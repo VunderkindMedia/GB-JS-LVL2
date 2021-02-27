@@ -17,6 +17,11 @@ header {
   font-size: 16px;
   color: #e6e6e6;
   cursor: pointer;
+  display: flex;
+}
+.cart-button p {
+  color: #e6e6e6;
+  margin-left: 5px;
 }
 .cart-button:hover {
   opacity: 0.8;
@@ -66,6 +71,9 @@ header {
   width: 200px;
   background: #6e6e6e;
   align-self: flex-end;
+}
+.product-item .disabled {
+  background-color: green;
 }
 .product-item:not(:last-child) {
   margin-right: 15px;

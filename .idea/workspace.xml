@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb158422-ecaf-42bf-85cb-976503f368ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/GB-JS-LVL2_Lesson1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/main.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/hamburger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/hamburger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hamburger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="lesson1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,12 +61,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612667557548</updated>
-      <workItem from="1612667558787" duration="3353000" />
+      <workItem from="1612667558787" duration="3738000" />
+      <workItem from="1613276327727" duration="8154000" />
     </task>
+    <task id="LOCAL-00001" summary="LESSON 1&#10;&#10;Избавился от запятых методом join массива.&#10;Немного стилизовал всю разметку.">
+      <created>1612670961206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612670961207</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LESSON 1&#10;&#10;Избавился от запятых методом join массива.&#10;Немного стилизовал всю разметку." />
+    <option name="LAST_COMMIT_MESSAGE" value="LESSON 1&#10;&#10;Избавился от запятых методом join массива.&#10;Немного стилизовал всю разметку." />
   </component>
   <component name="WindowStateProjectService">
     <state x="593" y="316" key="#File_Watchers" timestamp="1612668033593">
@@ -83,6 +94,10 @@
       <screen x="0" y="25" width="1440" height="816" />
     </state>
     <state x="507" y="142" key="#com.intellij.ide.macro.MacrosDialog/0.25.1440.816@0.25.1440.816" timestamp="1612667930319" />
+    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2" timestamp="1612670960953">
+      <screen x="0" y="25" width="1440" height="816" />
+    </state>
+    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2/0.25.1440.816@0.25.1440.816" timestamp="1612670960953" />
     <state x="375" y="215" width="689" height="473" key="EditFileWatcherDialog" timestamp="1612668031444">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
@@ -91,5 +106,9 @@
       <screen x="0" y="25" width="1440" height="816" />
     </state>
     <state x="229" y="69" key="SettingsEditor/0.25.1440.816@0.25.1440.816" timestamp="1612667855843" />
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1612670973492">
+      <screen x="0" y="25" width="1440" height="816" />
+    </state>
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.25.1440.816@0.25.1440.816" timestamp="1612670973492" />
   </component>
 </project>
