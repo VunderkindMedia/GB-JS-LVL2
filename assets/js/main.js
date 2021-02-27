@@ -11,22 +11,7 @@ class GoodItem {
   }
 
   render() {
-    return `<div class="product-item">
-              <div class="product-item__image"><img src="https://picsum.photos/200" alt="image"></div>
-              <h3 class="product-item__title">${this.title}</h3>
-              <p class="product-item__price">Price: ${this.price} USD</p>
-              <div class="product-item__cart-btn cart-button">
-              <span>Добавить в корзину</span>
-                <div class="cssload-container hide">
-                  <ul class="cssload-flex-container">
-                    <li>
-                      <span class="cssload-loading"></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-           </div>
-          </div>`;
+    return ``;
   }
 }
 
@@ -66,7 +51,6 @@ class GoodsList {
       const match = item.product_name.toLowerCase().includes(text.toLowerCase());
       return !!match;
     })
-    this.render();
   }
 
   getAllPrice() {

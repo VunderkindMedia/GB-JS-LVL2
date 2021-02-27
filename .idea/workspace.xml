@@ -4,20 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb158422-ecaf-42bf-85cb-976503f368ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/form.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/form.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/regex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/regex.html" afterDir="false" />
+    <list default="true" id="eb158422-ecaf-42bf-85cb-976503f368ea" name="Default Changelist" comment="LESSON 4&#10;&#10;Добавил поиск.&#10;&#10;Функция замены кавычек описана в файлах regex.(js,html,css).&#10;Валидация формы описана в файлах form.(js,html,css)">
+      <change afterPath="$PROJECT_DIR$/assets/js/main_vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/form.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/form.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/hamburger.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/hamburger.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/hamburger.less" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/hamburger.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/regex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hamburger.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regex.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson3" />
+        <entry key="$PROJECT_DIR$" value="lesson4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +76,8 @@
       <updated>1612667557548</updated>
       <workItem from="1612667558787" duration="3738000" />
       <workItem from="1613276327727" duration="15577000" />
-      <workItem from="1614047712936" duration="12265000" />
+      <workItem from="1614047712936" duration="13536000" />
+      <workItem from="1614401278936" duration="5980000" />
     </task>
     <task id="LOCAL-00001" summary="LESSON 1&#10;&#10;Избавился от запятых методом join массива.&#10;Немного стилизовал всю разметку.">
       <created>1612670961206</created>
@@ -93,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613554853162</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="LESSON 4&#10;&#10;Добавил поиск.&#10;&#10;Функция замены кавычек описана в файлах regex.(js,html,css).&#10;Валидация формы описана в файлах form.(js,html,css)">
+      <created>1614061685868</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614061685868</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +118,8 @@
     <MESSAGE value="LESSON 1&#10;&#10;Избавился от запятых методом join массива.&#10;Немного стилизовал всю разметку." />
     <MESSAGE value="LESSON 2&#10;&#10;Перенес всю логику по списку товаров на ООП структуру.&#10;&#10;Создал классы для корзины и связал их с версткой. Элементы добавляются в корзину, обновляется счетчик элементов в корзине.&#10;&#10;Отдельно написал калькулятор гамбургера (hamburger.html, *.js, *.css)" />
     <MESSAGE value="LESSON 3&#10;&#10;Добавил асинхронные запросы к условному бэку.&#10;&#10;Добавил прелоадеры к списку товаров и кнопке добавления в корзину." />
-    <option name="LAST_COMMIT_MESSAGE" value="LESSON 3&#10;&#10;Добавил асинхронные запросы к условному бэку.&#10;&#10;Добавил прелоадеры к списку товаров и кнопке добавления в корзину." />
+    <MESSAGE value="LESSON 4&#10;&#10;Добавил поиск.&#10;&#10;Функция замены кавычек описана в файлах regex.(js,html,css).&#10;Валидация формы описана в файлах form.(js,html,css)" />
+    <option name="LAST_COMMIT_MESSAGE" value="LESSON 4&#10;&#10;Добавил поиск.&#10;&#10;Функция замены кавычек описана в файлах regex.(js,html,css).&#10;Валидация формы описана в файлах form.(js,html,css)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="593" y="316" key="#File_Watchers" timestamp="1612668033593">
@@ -119,10 +134,10 @@
       <screen x="0" y="25" width="1440" height="816" />
     </state>
     <state x="507" y="142" key="#com.intellij.ide.macro.MacrosDialog/0.25.1440.816@0.25.1440.816" timestamp="1612667930319" />
-    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2" timestamp="1613554852968">
+    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2" timestamp="1614061739204">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
-    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2/0.25.1440.816@0.25.1440.816" timestamp="1613554852968" />
+    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2/0.25.1440.816@0.25.1440.816" timestamp="1614061739204" />
     <state x="375" y="215" width="689" height="473" key="EditFileWatcherDialog" timestamp="1612668031444">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
@@ -131,10 +146,10 @@
       <screen x="0" y="25" width="1440" height="816" />
     </state>
     <state x="229" y="69" key="SettingsEditor/0.25.1440.816@0.25.1440.816" timestamp="1612667855843" />
-    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1613554856365">
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1614061689844">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
-    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.25.1440.816@0.25.1440.816" timestamp="1613554856365" />
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.25.1440.816@0.25.1440.816" timestamp="1614061689844" />
     <state x="385" y="165" width="670" height="676" key="search.everywhere.popup" timestamp="1614055340191">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
