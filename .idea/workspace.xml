@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb158422-ecaf-42bf-85cb-976503f368ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/hamburger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/hamburger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hamburger.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
@@ -30,18 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson1" />
+        <entry key="$PROJECT_DIR$" value="lesson2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1o8U96Nj6EVsBDFk62b5uLzkQ1a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -62,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612667557548</updated>
       <workItem from="1612667558787" duration="3738000" />
-      <workItem from="1613276327727" duration="8154000" />
+      <workItem from="1613276327727" duration="14856000" />
     </task>
     <task id="LOCAL-00001" summary="LESSON 1&#10;&#10;Избавился от запятых методом join массива.&#10;Немного стилизовал всю разметку.">
       <created>1612670961206</created>
@@ -71,15 +71,24 @@
       <option name="project" value="LOCAL" />
       <updated>1612670961207</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LESSON 2&#10;&#10;Перенес всю логику по списку товаров на ООП структуру.&#10;&#10;Создал классы для корзины и связал их с версткой. Элементы добавляются в корзину, обновляется счетчик элементов в корзине.&#10;&#10;Отдельно написал калькулятор гамбургера (hamburger.html, *.js, *.css)">
+      <created>1613285465496</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613285465496</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="LESSON 1&#10;&#10;Избавился от запятых методом join массива.&#10;Немного стилизовал всю разметку." />
-    <option name="LAST_COMMIT_MESSAGE" value="LESSON 1&#10;&#10;Избавился от запятых методом join массива.&#10;Немного стилизовал всю разметку." />
+    <MESSAGE value="LESSON 2&#10;&#10;Перенес всю логику по списку товаров на ООП структуру.&#10;&#10;Создал классы для корзины и связал их с версткой. Элементы добавляются в корзину, обновляется счетчик элементов в корзине.&#10;&#10;Отдельно написал калькулятор гамбургера (hamburger.html, *.js, *.css)" />
+    <option name="LAST_COMMIT_MESSAGE" value="LESSON 2&#10;&#10;Перенес всю логику по списку товаров на ООП структуру.&#10;&#10;Создал классы для корзины и связал их с версткой. Элементы добавляются в корзину, обновляется счетчик элементов в корзине.&#10;&#10;Отдельно написал калькулятор гамбургера (hamburger.html, *.js, *.css)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="593" y="316" key="#File_Watchers" timestamp="1612668033593">
@@ -94,10 +103,10 @@
       <screen x="0" y="25" width="1440" height="816" />
     </state>
     <state x="507" y="142" key="#com.intellij.ide.macro.MacrosDialog/0.25.1440.816@0.25.1440.816" timestamp="1612667930319" />
-    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2" timestamp="1612670960953">
+    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2" timestamp="1613285465311">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
-    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2/0.25.1440.816@0.25.1440.816" timestamp="1612670960953" />
+    <state x="304" y="25" width="832" height="816" key="CommitChangelistDialog2/0.25.1440.816@0.25.1440.816" timestamp="1613285465311" />
     <state x="375" y="215" width="689" height="473" key="EditFileWatcherDialog" timestamp="1612668031444">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
@@ -106,9 +115,9 @@
       <screen x="0" y="25" width="1440" height="816" />
     </state>
     <state x="229" y="69" key="SettingsEditor/0.25.1440.816@0.25.1440.816" timestamp="1612667855843" />
-    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1612670973492">
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1613285470831">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
-    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.25.1440.816@0.25.1440.816" timestamp="1612670973492" />
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.25.1440.816@0.25.1440.816" timestamp="1613285470831" />
   </component>
 </project>

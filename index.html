@@ -19,28 +19,41 @@
     <main>
         <div class="products-list">
             <div class="wrapper products-wrapper">
+                <div class="loader">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
         </div>
     </main>
 <script src="assets/js/main.js"></script>
 <script>
-  const itemsHTML = document.querySelectorAll('.product-item__cart-btn');
+  goodList.getList().then(result => {
+    const itemsHTML = document.querySelectorAll('.product-item__cart-btn');
 
-  itemsHTML.forEach((el) => {
-    const title = el.parentNode.querySelector('.product-item__title').innerHTML;
-    const price = el.parentNode.querySelector('.product-item__price').innerHTML;
-    el.addEventListener('click', () => {
-      if (!el.classList.contains('disabled')) {
-        el.innerHTML = 'Удалить из корзины';
-        cartList.addItem(title,price);
-        el.classList.add('disabled');
-      } else {
-        el.innerHTML = 'Добавить в корзину';
-        cartList.deleteItem({title, price});
-        el.classList.remove('disabled');
-      }
+    itemsHTML.forEach((el) => {
+
+      const title = el.parentNode.querySelector('.product-item__title').innerHTML;
+      const price = el.parentNode.querySelector('.product-item__price').innerHTML;
+      const loader = el.querySelector('.cssload-container');
+      el.addEventListener('click', () => {
+        if (!el.classList.contains('disabled')) {
+          loader.classList.remove('hide');
+          cartList.addItem(title,price).then(result => {
+            el.querySelector('span').innerHTML = 'Удалить из корзины';
+            el.classList.add('disabled');
+            loader.classList.add('hide');
+          });
+        } else {
+          el.querySelector('span').innerHTML = 'Добавить в корзину';
+          cartList.deleteItem({title, price});
+          el.classList.remove('disabled');
+        }
+      })
     })
-  })
+  });
+
 </script>
 </body>
 </html>
