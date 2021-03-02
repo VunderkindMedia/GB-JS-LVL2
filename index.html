@@ -9,51 +9,47 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<div id="root">
     <header>
         <div class="wrapper header-wrapper">
             <div class="logo">LOGO</div>
             <div class="main-menu">MENU</div>
-            <div class="cart-button" type="button">Корзина - <p></p></div>
+            <app-search-input :search_items="searchItems" :search_value="searchValue"></app-search-input>
+            <app-cart-button :open_close_cart="openCloseCart" :cart_list="cartList"></app-cart-button>
         </div>
     </header>
     <main>
-        <div class="products-list">
-            <div class="wrapper products-wrapper">
-                <div class="loader">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+        <app-product-list
+                :items="filteredList"
+                :is_cart="isCart"
+                :add_cart="addCart"
+                :remove_cart="removeCart"
+                :filtered_list="filteredList"
+                :products_list="productsList">
+        </app-product-list>
+        <div v-bind:class="{close: cartIsClosed}" class="modalDialog">
+            <div style="width: 800px; padding: 25px" v-if="cartList.length > 0">
+                <span style='cursor: pointer' @click="openCloseCart">Закрыть</span>
+                <div style="margin-top: 50px" class="wrapper products-wrapper" >
+                <div class="carts-item" v-for="item in cartList">
+                    <div class="carts-item__image"><img src="https://picsum.photos/200" alt="image"></div>
+                    <h3 class="carts-item__title">{{item.product_name}}</h3>
+                    <p class="carts-item__price">Price: {{item.price}} USD</p>
+                    <div class="carts-item__cart-btn cart-button" v-bind:class="{disabled: isCart(item.id_product)}" @click="!isCart(item.id_product) ? addCart(item.id_product) : removeCart(item.id_product)">
+                        <span>{{isCart(item.id_product) ? 'Удалить из корзины' : 'Добавить в корзину'}}</span>
+                    </div>
                 </div>
             </div>
+            </div>
+            <div v-if="cartList.length <= 0" style="width: 400px; height: 400px; display: flex; flex-direction: column">
+                <span style="cursor: pointer" @click="openCloseCart">Закрыть</span>
+                <div style="width: 100%;height: 100%; display: flex; justify-content: center; align-items: center">Корзина пуста</div>
+            </div>
+
         </div>
     </main>
-<script src="assets/js/main.js"></script>
-<script>
-  goodList.getList().then(result => {
-    const itemsHTML = document.querySelectorAll('.product-item__cart-btn');
-
-    itemsHTML.forEach((el) => {
-
-      const title = el.parentNode.querySelector('.product-item__title').innerHTML;
-      const price = el.parentNode.querySelector('.product-item__price').innerHTML;
-      const loader = el.querySelector('.cssload-container');
-      el.addEventListener('click', () => {
-        if (!el.classList.contains('disabled')) {
-          loader.classList.remove('hide');
-          cartList.addItem(title,price).then(result => {
-            el.querySelector('span').innerHTML = 'Удалить из корзины';
-            el.classList.add('disabled');
-            loader.classList.add('hide');
-          });
-        } else {
-          el.querySelector('span').innerHTML = 'Добавить в корзину';
-          cartList.deleteItem({title, price});
-          el.classList.remove('disabled');
-        }
-      })
-    })
-  });
-
-</script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="assets/js/main_vue.js"></script>
 </body>
 </html>
