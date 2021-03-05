@@ -18,6 +18,7 @@
             <app-cart-button :open_close_cart="openCloseCart" :cart_list="cartList"></app-cart-button>
         </div>
     </header>
+]
     <main>
         <app-product-list
                 :items="filteredList"
@@ -32,11 +33,11 @@
                 <span style='cursor: pointer' @click="openCloseCart">Закрыть</span>
                 <div style="margin-top: 50px" class="wrapper products-wrapper" >
                 <div class="carts-item" v-for="item in cartList">
-                    <div class="carts-item__image"><img src="https://picsum.photos/200" alt="image"></div>
+                    <div class="carts-item__image"><img :src="item.product_image" alt="image"></div>
                     <h3 class="carts-item__title">{{item.product_name}}</h3>
                     <p class="carts-item__price">Price: {{item.price}} USD</p>
-                    <div class="carts-item__cart-btn cart-button" v-bind:class="{disabled: isCart(item.id_product)}" @click="!isCart(item.id_product) ? addCart(item.id_product) : removeCart(item.id_product)">
-                        <span>{{isCart(item.id_product) ? 'Удалить из корзины' : 'Добавить в корзину'}}</span>
+                    <div class="carts-item__cart-btn cart-button" v-bind:class="{disabled: isCart(item.product_id)}" @click="!isCart(item.product_id) ? addCart(item.product_id) : removeCart(item.product_id)">
+                        <span>{{isCart(item.product_id) ? 'Удалить из корзины' : 'Добавить в корзину'}}</span>
                     </div>
                 </div>
             </div>

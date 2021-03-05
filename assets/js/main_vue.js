@@ -32,11 +32,11 @@ Vue.component('app-product-item', {
   },
   template: `
                 <div class="product-item" >
-                    <div class="product-item__image"><img src="https://picsum.photos/200" alt="image"></div>
+                    <div class="product-item__image"><img :src="item.product_image" alt="image"></div>
                     <h3 class="product-item__title">{{item.product_name}}</h3>
                     <p class="product-item__price">Price: {{item.price}} USD</p>
-                    <div class="product-item__cart-btn cart-button" :class="{disabled: is_cart(item.id_product)}" @click="!is_cart(item.id_product) ? add_cart(item.id_product) : remove_cart(item.id_product)">
-                        <span>{{is_cart(item.id_product) ? 'Удалить из корзины' : 'Добавить в корзину'}}</span>
+                    <div class="product-item__cart-btn cart-button" :class="{disabled: is_cart(item.product_id)}" @click="!is_cart(item.product_id) ? add_cart(item.product_id) : remove_cart(item.product_id)">
+                        <span>{{is_cart(item.product_id) ? 'Удалить из корзины' : 'Добавить в корзину'}}</span>
                         <div class="cssload-container hide">
                             <ul class="cssload-flex-container">
                                 <li>
@@ -78,26 +78,39 @@ const app = new Vue({
   },
   methods: {
     getList() {
-      const url = `${API_URL}/catalogData.json`
+      const url = `http://localhost:3001/products/getAll`
       return fetch(url, {
         method: 'GET'
       }).then(result => {
         return result.json();
       }).then(result => {
-        this.productsList = result;
-        this.filteredList = result;
+        this.productsList = result.products;
+        this.filteredList = result.products;
       })
     },
     addCart(id) {
-      this.cartList.push(this.filteredList.find(item => item.id_product == id));
-      console.log(this.cartList);
+        const url = `http://localhost:3001/cart/add?product_id=${id}`
+        return fetch(url, {
+          method: 'GET'
+        }).then(result => {
+          return result.json();
+        }).then(result => {
+          this.cartList = result.cartList;
+        })
     },
     removeCart(id) {
-      this.cartList.splice(this.cartList.indexOf(this.cartList.find(item => item.id_product == id)));
-      console.log(this.cartList);
+      console.log(id);
+      const url = `http://localhost:3001/cart/remove?product_id=${id}`
+      return fetch(url, {
+        method: 'GET'
+      }).then(result => {
+        return result.json();
+      }).then(result => {
+        this.cartList = result.cartList;
+      })
     },
     isCart(id) {
-      return !!this.cartList.find(item => item.id_product == id);
+      return !!this.cartList.find(item => item.product_id == id);
     },
     _searchHandle(text) {
       this.filteredList = this.productsList.filter(item => {
